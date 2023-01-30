@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/13c39a5e2b.js" crossorigin="anonymous"></script>
+    <title>EncriptadorApp</title>
+    <style media="screen"></style>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logo de Alura" class="logo">
+    </header>
+    <main>
+        <form>
+            <textarea class="input_texto" cols="30" rows="7" placeholder="Ingrese texto aquí"></textarea>
+
+            <div class="exclamacion">
+                <img class="icono-exclamacion"  src="imagenes/Signo.png" alt="signo admiracion">
+                <p class="texto-minusculas">Solo letras minusculas y sin acento</p>
+            </div>
+
+            <div class="botones">
+                <button type="button" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </form>
+        <form>
+            <textarea class="area_copiar" cols="23" rows="8"></textarea>
+            <div>
+                <button type="button" class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="text">
+            <span class="text-muted">&copy; 2023 William Ambrocio</span>
+        </div>
+        <div class="social-container">
+            <a href="" class=""><i class="fa-brands fa-github"></i></a>
+            <a href="" class=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
